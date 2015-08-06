@@ -9,5 +9,3 @@ mkmf.log
 *.bundle
 .idea/*
 concurrent-trees-read-only
-lib/tilia/concurrent-trees.jar
-lib/tilia/ct.version

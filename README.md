@@ -3,20 +3,22 @@ Expose the java [concurrent-trees](http://concurrent-trees.googlecode.com/) libr
 
 *Note*: This code is at an early stage, and only exposes the `put` and `getKeyValuePairsForKeysStartingWith` methods of the [`ConcurrentRadixTree`](http://concurrent-trees.googlecode.com/svn/concurrent-trees/javadoc/apidocs/com/googlecode/concurrenttrees/radix/ConcurrentRadixTree.html) implementation.  
 
-*This has only been tested under JRuby.*
+**This has only been tested under JRuby.**
 
-## Building 
+## Updating Dependency Jar 
 
-Before you can use the library, you must install the dependent [concurrent-trees](http://concurrent-trees.googlecode.com) jar.  You can [download it on your own from maven](http://mvnrepository.com/artifact/com.googlecode.concurrent-trees/concurrent-trees/2.4.0).  The jar file must be saved to `lib/tilia/concurrent-trees.jar`.
+Before you can use the library, you must install the dependent [concurrent-trees](http://concurrent-trees.googlecode.com) jar.  This repository includes a pre-puilt jar.  If you wish to update it,  you can [download it on your own from maven](http://mvnrepository.com/artifact/com.googlecode.concurrent-trees/concurrent-trees/2.4.0).  The jar file must be saved to `lib/tilia/concurrent-trees.jar`.
 
-Alternatively, you can run the rake `build_ct_dep` task, which will build it from source and copy it to the proper directory.
+Alternatively, if you have Maven (`mvn`) and Subversion (`svn`) installed, you can run the rake `build_ct_dep` task, which will build it from source and copy it to the proper directory.
 ```
 # rake build_ct_dep 
 ```
 The above task will also create a file `ct.version`, which saves the version of `concurrent-trees` that was built.
 
 
-Once `concurrent-trees.jar` is installed, you can use the standard rake `build` command to build the gem:
+# Building
+
+Assuming the `concurrent-trees.jar` is installed, you can use the standard rake `build` command to build the gem:
 
 ```
 # rake build
