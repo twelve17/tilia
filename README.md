@@ -1,7 +1,9 @@
 # tilia
 Expose the java [concurrent-trees](http://concurrent-trees.googlecode.com/) library to JRuby.
 
-*Note*: This code is at an early stage, and only implements the `put` and `getKeyValuePairsForKeysStartingWith` methods of the [`ConcurrentRadixTree`](http://concurrent-trees.googlecode.com/svn/concurrent-trees/javadoc/apidocs/com/googlecode/concurrenttrees/radix/ConcurrentRadixTree.html) implementation.
+*Note*: This code is at an early stage, and only exposes the `put` and `getKeyValuePairsForKeysStartingWith` methods of the [`ConcurrentRadixTree`](http://concurrent-trees.googlecode.com/svn/concurrent-trees/javadoc/apidocs/com/googlecode/concurrenttrees/radix/ConcurrentRadixTree.html) implementation.  
+
+*This has only been tested under JRuby.*
 
 ## Building 
 
